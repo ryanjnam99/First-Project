@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="nav-bar">
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Projects</a>
+        <a class="top" href="#">About</a>
+        <a class="top" href="#">Contact</a>
+        <a class="top" href="#">Projects</a>
     </div>
     <div class="name-container">
         <h3 class="name">ID: Ryan Joon Nam</h3>
@@ -19,19 +21,32 @@
         <h3 class="profession">Occupation: Programmer</h3>
     </div>
     <div class="file-box">
-        <button class="file background"><img src="images/OneDrive_Folder_Icon.svg.png" alt="file-icon"><p class="classified">Classified Background</p></button>
-        <button class="file projects"><img src="images/OneDrive_Folder_Icon.svg.png" alt="file-icon"><p class="classified">Classified Projects</p></button>
-        <button class="file skillset"><img src="images/OneDrive_Folder_Icon.svg.png" alt="file-icon"><p class="classified">Classified Skillset</p></button>
+        <button onclick="press()" class="file background"><img class="" src="images/OneDrive_Folder_Icon.svg.png"
+                alt="file-icon">
+            <p class="classified">Classified Background</p>
+        </button>
+        <button onclick="press2()" class="file projects"><img class="" src="images/OneDrive_Folder_Icon.svg.png"
+                alt="file-icon">
+            <p class="classified">Classified Projects</p>
+        </button>
+        <button onclick="press3()" class="file skillset"><img class="" src="images/OneDrive_Folder_Icon.svg.png"
+                alt="file-icon">
+            <p class="classified">Classified Skillset</p>
+        </button>
     </div>
-    <div class="about-box">
+    <div class="about box">
         <h2>Who is Ryan Nam</h2>
         <div class="top-card">
             <img class="trip" src="images/vatican.jpg" alt="vatican">
             <div class="info">
-                <p class="bio">Ryan Nam, age 23, is a full-stack developer who graduated from Whitman College with a bachelor's in psychology.</p>
-                <p>As of now, his current whereabouts is located in Clyde Hill, Washington.</p>
-                <p>It is apparent that his sudden change in career stems from his obsession to decipher problems as both a technician and an artist. </p>
-                <p>Hobbies seem to include keeping tabs with all Seattle-based sports teams. Intriguing but emotionally draining.</p>
+                <p class="bio">Ryan Nam, age 23, is a full-stack developer who graduated from Whitman College with a
+                    bachelor's in psychology.
+                    As of now, his current whereabouts is located in Clyde Hill, Washington.
+                    It is apparent that his sudden change in career stems from his obsession to decipher problems as
+                    both a technician and an artist.
+                    Hobbies seem to include keeping tabs with all Seattle-based sports teams. Intriguing but emotionally
+                    draining.
+                </p>
                 <div class="image-box">
                     <img class="logo" src="images/blueslogo.png" alt="blues">
                     <img class="logo" src="images/Seahawks.png" alt="seahawks">
@@ -44,12 +59,30 @@
             <h3>To Contact Him:</h3>
             <div class="email-box">
                 <img class="contact" src="images/yahoo.png" alt="yahoo">
-                <a href="email">ryanjnam@yahoo.com</a>
+                <a class="linkage" href="#" onclick="press5()">ryanjnam@yahoo.com</a>
                 <img class="contact" src="images/Github.png" alt="github">
-                <a href="email">ryanjnam99</a>
+                <a class="linkage" href="#" onclick="navigation2()">ryanjnam99</a>
             </div>
         </div>
     </div>
-<script src="script.js"></script>   
+    <div class="project box">
+        <h2>Completed Projects</h2>
+        <div class="project-box">
+            <img src="images/disk.png" alt="disk">
+            <a onclick="press4()"href="#">Dojo Weather</a>
+        </div>
+    </div>
+    <div class="skill box">
+        <h2>Skillset</h2>
+        <div class="project-box">
+            <img class="trio" src="images/css-3.svg" alt="logos">
+            <img class="trio" src="images/javascript-1 (1).svg" alt="logos">
+            <img class="trio" src="images/HTML5_Badge.svg" alt="logos">
+        </div>
+        <h3 class="current">Current Language Demographics</h3>
+        <div class="pie-chart"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
