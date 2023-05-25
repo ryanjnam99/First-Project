@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 </head>
 
 <body>
@@ -21,15 +24,15 @@
         <h3 class="profession">Occupation: Programmer</h3>
     </div>
     <div class="file-box">
-        <button onclick="press()" class="file background"><img class="" src="images/OneDrive_Folder_Icon.svg.png"
+        <button onclick="press()" class="file background"><img onmouseover="scale(this, 1.25)" onmouseleave="scale(this, 1)" src="images/OneDrive_Folder_Icon.svg.png"
                 alt="file-icon">
             <p class="classified">Classified Background</p>
         </button>
-        <button onclick="press2()" class="file projects"><img class="" src="images/OneDrive_Folder_Icon.svg.png"
+        <button onclick="press2()" class="file projects"><img onmouseover="scale(this, 1.25)" onmouseleave="scale(this, 1)" src="images/OneDrive_Folder_Icon.svg.png"
                 alt="file-icon">
             <p class="classified">Classified Projects</p>
         </button>
-        <button onclick="press3()" class="file skillset"><img class="" src="images/OneDrive_Folder_Icon.svg.png"
+        <button onclick="press3()" class="file skillset"><img onmouseover="scale(this, 1.25)" onmouseleave="scale(this, 1)" src="images/OneDrive_Folder_Icon.svg.png"
                 alt="file-icon">
             <p class="classified">Classified Skillset</p>
         </button>
@@ -39,13 +42,7 @@
         <div class="top-card">
             <img class="trip" src="images/vatican.jpg" alt="vatican">
             <div class="info">
-                <p class="bio">Ryan Nam, age 23, is a full-stack developer who graduated from Whitman College with a
-                    bachelor's in psychology.
-                    As of now, his current whereabouts is located in Clyde Hill, Washington.
-                    It is apparent that his sudden change in career stems from his obsession to decipher problems as
-                    both a technician and an artist.
-                    Hobbies seem to include keeping tabs with all Seattle-based sports teams. Intriguing but emotionally
-                    draining.
+                <p class="bio" id="str">
                 </p>
                 <div class="image-box">
                     <img class="logo" src="images/blueslogo.png" alt="blues">
@@ -69,7 +66,7 @@
         <h2>Completed Projects</h2>
         <div class="project-box">
             <img src="images/disk.png" alt="disk">
-            <a onclick="press4()"href="#">Dojo Weather</a>
+            <a class="weather"onclick="press4()" href="#">Dojo Weather</a>
         </div>
     </div>
     <div class="skill box">
@@ -81,6 +78,7 @@
         </div>
         <h3 class="current">Current Language Demographics</h3>
         <div class="pie-chart"></div>
+        <div id="chartdiv"></div>
     </div>
     <script src="script.js"></script>
 </body>
