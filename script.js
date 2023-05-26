@@ -12,6 +12,27 @@ function press() {
         var running = setTimeout(animate, 90);
     })();
 }
+var stringTwo = "A Weather forecast that adjusts its temperature by Celcius and Fahrenheit.";
+var strTwo = stringTwo.split("");
+var elTwo = document.getElementById('strTwo');
+
+function press6() {
+    (function animate() {
+        strTwo.length > 0 ? elTwo.innerHTML += strTwo.shift() : clearTimeout(running);
+        var running = setTimeout(animate, 90);
+    })()
+}
+
+var stringThree = "Of course every career field has it's highs and lows, but what coding rewards you is the emotional and mental satisfaction that allows you to appreciate and marvel at your own labor. -Nam Tzu, The Art of Code";
+var strThree = stringThree.split("");
+var elThree = document.getElementById('strThree');
+
+function press7() {
+    (function animate() {
+        strThree.length > 0 ? elThree.innerHTML += strThree.shift() : clearTimeout(running);
+        var running = setTimeout(animate, 90);
+    })()
+}
 
 var myproject = document.querySelector(".project");
 function press2() {
@@ -72,3 +93,4 @@ series.dataFields.depthValue = "litres";
 series.dataFields.category = "country";
 series.slices.template.cornerRadius = 5;
 series.colors.step = 10;
+

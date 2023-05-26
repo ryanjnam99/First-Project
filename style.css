@@ -6,7 +6,7 @@
 /* Nav-bar */
 body {
     margin: 0 auto;
-    background-image: url('images/matrix.gif');
+    background-image: url('images/numbers-matrix.gif');
     width: 1000px;
 }
 
@@ -18,10 +18,10 @@ body {
     justify-content: space-evenly;
     font-family: Courier;
     margin-bottom: 150px;
-    border: 2px solid chartreuse;
+    border-bottom: 2px solid chartreuse;
 }
 
-.top {
+.head {
     color: chartreuse;
     text-decoration: none;
     font-size: larger;
@@ -35,9 +35,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
 
 
 #str {
@@ -150,21 +147,23 @@ button {
     text-align: center;
 }
 
+
+
 .bio {
     margin: 60px 20px 0 0px;
 }
 
+.para {
+    height: 300px;
+    width: 100%;
 
-
-p {
-    margin-bottom: 10px;
 }
+
 
 
 .logo {
     height: 100px;
     width: 100px;
-    margin-top: 70px;
 }
 
 .contact-box {
@@ -235,7 +234,114 @@ body {
     background-color: chartreuse;
     color: chartreuse;
     border-radius: 25%;
+    font-weight: bold;
+
 }
+
+
+
+#strTwo {
+    font-weight: bold;
+}
+
+/* Reasoning for Coding */
+
+.envelope {
+    animation: wiggle 2s linear infinite;
+    margin-left: 264px;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+
+}
+
+/* Keyframes */
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+
+.arrow {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.info2 {
+    height: 600px;
+    width: 500px;
+    background-color: black;
+    border: 2px solid chartreuse;
+    border-radius: 25%;
+    font-family: courier;
+    color: chartreuse;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+
+.bio {
+    margin: 60px 20px 0 10px;
+}
+
+.trip2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 25%;
+    border: 2px solid chartreuse;
+}
+
+
+
+#fade_out {
+    position: relative;
+    height: 100%;
+    width: auto;
+    display: flex;
+    margin-left: 150px;
+}
+
+#fade_out img {
+    position: absolute;
+    -webkit-transition: opacity 2s linear;
+    -moz-transition: opacity 2s linear;
+    transition: opacity 2s linear;
+}
+
+#fade_out img.top:hover {
+    opacity: 0;
+}
+
 
 
 
@@ -247,7 +353,7 @@ body {
         background-image: url('images/matrix.gif');
         align-content: center;
     }
-    
+
     .nav-bar {
         background-color: chartreuse;
         color: black;
@@ -259,7 +365,7 @@ body {
         color: black;
     }
 
-    .top {
+    .head {
         color: black;
     }
 
@@ -275,8 +381,10 @@ body {
     }
 
     .logo {
-        height: 30px;
-        width: 30px;
+        height: 50px;
+        width: 50px;
+        margin-top: 200px;
+        margin-left: 10px;
     }
 
     .image-box {
@@ -301,6 +409,13 @@ body {
         height: 100px;
         width: 100px;
     }
+
+    .trip2 {
+        height: 100px;
+        width: 100px;
+        margin-top: 50px;
+    }
+
 
     .about-box {
         margin-top: 100px;
@@ -361,10 +476,26 @@ body {
     }
 
     .weather {
-        color:black;
+        color: black;
     }
-    
 
+    .para {
+        height: 30%
+    }
+
+    .envelope {
+        margin-left: 119px;
+    }
+
+    .info2 {
+        width: 300px;
+        height: 550px;
+        margin-left: 70px;
+    }
+
+    #fade_out {
+        margin-left: 100px;
+    }
 
 
 }

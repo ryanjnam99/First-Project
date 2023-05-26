@@ -13,37 +13,47 @@
 </head>
 
 <body>
+    <!-- nav-bar containing the main contents -->
     <div class="nav-bar">
-        <a class="top" href="#">About</a>
-        <a class="top" href="#">Contact</a>
-        <a class="top" href="#">Projects</a>
+        <a class="head" href="#">About</a>
+        <a class="head" href="#">Projects</a>
+        <a class="head" href="#">Qualifications</a>
     </div>
+
+    <!-- My name and intro box -->
+
     <div class="name-container">
         <h3 class="name">ID: Ryan Joon Nam</h3>
         <h3>Other Aliases: 남준</h3>
         <h3 class="profession">Occupation: Programmer</h3>
     </div>
+
+    <!-- File icon that directs you to one of main pages -->
     <div class="file-box">
-        <button onclick="press()" class="file background"><img onmouseover="scale(this, 1.25)" onmouseleave="scale(this, 1)" src="images/OneDrive_Folder_Icon.svg.png"
-                alt="file-icon">
+        <button onclick="press()" class="file background"><img onmouseover="scale(this, 1.25)"
+                onmouseleave="scale(this, 1)" src="images/OneDrive_Folder_Icon.svg.png" alt="file-icon">
             <p class="classified">Classified Background</p>
         </button>
-        <button onclick="press2()" class="file projects"><img onmouseover="scale(this, 1.25)" onmouseleave="scale(this, 1)" src="images/OneDrive_Folder_Icon.svg.png"
-                alt="file-icon">
+        <button onclick="press2()" class="file projects"><img onmouseover="scale(this, 1.25)"
+                onmouseleave="scale(this, 1)" src="images/OneDrive_Folder_Icon.svg.png" alt="file-icon">
             <p class="classified">Classified Projects</p>
         </button>
-        <button onclick="press3()" class="file skillset"><img onmouseover="scale(this, 1.25)" onmouseleave="scale(this, 1)" src="images/OneDrive_Folder_Icon.svg.png"
-                alt="file-icon">
+        <button onclick="press3()" class="file skillset"><img onmouseover="scale(this, 1.25)"
+                onmouseleave="scale(this, 1)" src="images/OneDrive_Folder_Icon.svg.png" alt="file-icon">
             <p class="classified">Classified Skillset</p>
         </button>
+
+    <!-- This is the about page that covers my background, contact, and education -->
     </div>
     <div class="about box">
         <h2>Who is Ryan Nam</h2>
         <div class="top-card">
             <img class="trip" src="images/vatican.jpg" alt="vatican">
             <div class="info">
-                <p class="bio" id="str">
-                </p>
+                <div class="para">
+                    <p class="bio" id="str">
+                    </p>
+                </div>
                 <div class="image-box">
                     <img class="logo" src="images/blueslogo.png" alt="blues">
                     <img class="logo" src="images/Seahawks.png" alt="seahawks">
@@ -62,13 +72,19 @@
             </div>
         </div>
     </div>
+
+    <!-- This is the project page of course, which I will continue to update as the bootcamp progresses -->
     <div class="project box">
         <h2>Completed Projects</h2>
         <div class="project-box">
-            <img src="images/disk.png" alt="disk">
-            <a class="weather"onclick="press4()" href="#">Dojo Weather</a>
+            <img onclick="press6()" onmouseover="scale(this, 1.25)" onmouseleave="scale(this, 1)" src="images/disk.png"
+                alt="disk">
+            <a class="weather" onclick="press4()" href="#">Dojo Weather</a>
         </div>
+        <p id="strTwo"></p>
     </div>
+
+    <!-- The skill page contains the languages I have mastered or at least am familiar with -->
     <div class="skill box">
         <h2>Skillset</h2>
         <div class="project-box">
@@ -79,6 +95,23 @@
         <h3 class="current">Current Language Demographics</h3>
         <div class="pie-chart"></div>
         <div id="chartdiv"></div>
+    </div>
+
+    <!-- This page covers my motivations for doing code -->
+    <div class="reason box">
+        <h2>Why Code?</h2>
+        <p class="arrow">Click this</p>
+        <button class="envelope" onclick="press7()"><img class="envelope" src="images/Circle-icons-mail.svg.png"
+                alt="mail"></button>
+        <div class="info2">
+            <div class="para">
+                <p class="bio" id="strThree"></p>
+            </div>
+            <div id="fade_out">
+                <img class="bottom trip2" src="images/Nam Tzu.jpg" alt="philospher"/>
+                <img class="top trip2" src="images/vatican.jpg" alt="vatican"/>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
