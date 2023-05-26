@@ -94,3 +94,9 @@ series.dataFields.category = "country";
 series.slices.template.cornerRadius = 5;
 series.colors.step = 10;
 
+var myHomepage = document.querySelector(".name-container");
+function press8() {
+    myHomepage.scrollIntoView(true);
+}
+
+

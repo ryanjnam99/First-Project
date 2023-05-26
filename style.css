@@ -8,6 +8,8 @@ body {
     margin: 0 auto;
     background-image: url('images/numbers-matrix.gif');
     width: 1000px;
+    gap: 5000px;
+    
 }
 
 .nav-bar {
@@ -19,6 +21,10 @@ body {
     font-family: Courier;
     margin-bottom: 150px;
     border-bottom: 2px solid chartreuse;
+    position: fixed;
+    width: 1000px;
+    overflow: hidden;
+    top: 0;
 }
 
 .head {
@@ -58,6 +64,7 @@ body {
     color: chartreuse;
     font-family: Courier;
     margin-bottom: 100px;
+    margin-top: 200px;
 }
 
 .name {
@@ -350,13 +357,17 @@ body {
     body {
         width: 500px;
         margin: 0 auto;
-        background-image: url('images/matrix.gif');
+        background-image: url('images/numbers-matrix.gif');
         align-content: center;
     }
 
     .nav-bar {
         background-color: chartreuse;
         color: black;
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+        top: 0;
     }
 
     .name-container {
