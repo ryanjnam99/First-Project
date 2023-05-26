@@ -99,4 +99,11 @@ function press8() {
     myHomepage.scrollIntoView(true);
 }
 
+var myReason = document.querySelector(".Explain");
+function press9() {
+    myReason.scrollIntoView(true);
+}
+
+
+
 

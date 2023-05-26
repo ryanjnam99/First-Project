@@ -20,11 +20,15 @@ body {
     justify-content: space-evenly;
     font-family: Courier;
     margin-bottom: 150px;
-    border-bottom: 2px solid chartreuse;
+    border: 2px solid chartreuse;
     position: fixed;
     width: 1000px;
     overflow: hidden;
     top: 0;
+}
+
+span {
+    color: white;
 }
 
 .head {
